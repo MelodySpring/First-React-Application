@@ -1,13 +1,13 @@
-// HomePage.js
 import React from 'react';
+import DogFacts from '../components/DogFacts'; // if you want to use the DogFacts component
 
-const HomePage = () => {
+const DogFactsPage = () => {
   return (
     <div>
-      <h2>Welcome to the Contact Page</h2>
-      <p>This is the main content of the contact page.</p>
+      <h2>Welcome to the Dog Facts Page</h2>
+      <DogFacts />
     </div>
   );
 };
 
-export default HomePage;
+export default DogFactsPage;
