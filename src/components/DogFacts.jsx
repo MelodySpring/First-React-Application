@@ -4,6 +4,7 @@ import axios from 'axios';
 export default function DogFacts() {
     const [maxLength, setMaxLength] = useState(5);
     const [dogFacts, setDogFacts] = useState([]);
+    const [dogImage, setDogImage] = useState(null);
     const [error, setError] = useState(null);
 
     const handleChange = (e) => {
@@ -19,17 +20,22 @@ export default function DogFacts() {
         setError(null);
 
         try {
-            const response = await axios.get(
+            // Fetch facts
+            const factsResponse = await axios.get(
                 `https://dogapi.dog/api/v2/facts?limit=${maxLength}`
             );
-
-            const facts = response.data.data.map(item => item.attributes.body);
-
+            const facts = factsResponse.data.data.map(item => item.attributes.body);
             setDogFacts(facts);
+
+            // Fetch random image
+            const imageResponse = await axios.get(
+                "https://dog.ceo/api/breeds/image/random"
+            );
+            setDogImage(imageResponse.data.message);
 
         } catch (err) {
             console.error(err);
-            setError("Could not retrieve dog facts.");
+            setError("Could not retrieve dog facts or image.");
         }
     };
 
@@ -46,6 +52,17 @@ export default function DogFacts() {
             <button onClick={handleSearch}>Fetch Dog Facts</button>
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
+
+            {/* Random dog image */}
+            {dogImage && (
+                <div style={{ marginTop: '20px' }}>
+                    <img
+                        src={dogImage}
+                        alt="Random Dog"
+                        style={{ width: '300px', borderRadius: '10px' }}
+                    />
+                </div>
+            )}
 
             <div>
                 {dogFacts.length === 0 ? (
