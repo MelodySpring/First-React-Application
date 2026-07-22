@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../DogFacts.css';
+
 
 export default function DogFacts() {
     const [maxLength, setMaxLength] = useState(5);
@@ -42,14 +44,13 @@ export default function DogFacts() {
     return (
         <div style={{ padding: '20px' }}>
             <h1>Dog Facts</h1>
-
             <input
                 type="number"
                 value={maxLength}
                 onChange={handleChange}
             />
 
-            <button onClick={handleSearch}>Fetch Dog Facts</button>
+            <button onClick={handleSearch}>Fetch 🥎</button>
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
 

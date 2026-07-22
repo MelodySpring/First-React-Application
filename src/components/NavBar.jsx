@@ -1,19 +1,26 @@
+import logo from '../assets/reddog.svg';
+
 const NavBar = () => {
   return (
     <nav style={styles.navbar}>
-        <h1>My Amazing App</h1>
-      </nav>
-  )
-}
+      <img src={logo} alt="Red Dog Design Logo" style={styles.logo} />
+      <h1>Red Dog Design</h1>
+    </nav>
+  );
+};
 
-// Inline styles for simplicity
-const styles = {  
+const styles = {
   navbar: {
-    backgroundColor: '#333',
-    color: '#fff',
-    padding: '10px',
-    textAlign: 'center',
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    padding: "10px 20px",
+    backgroundColor: "#f5f5f5"
   },
+  logo: {
+    height: "150px",
+    width: "150px"
+  }
 };
 
 export default NavBar

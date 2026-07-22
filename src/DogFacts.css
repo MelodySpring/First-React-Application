@@ -1,0 +1,16 @@
+.dogFactsTitle {
+    font-size: 2rem;
+    color: #3A8DFF;
+    /* bright medium blue */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.dogFactsImage {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(58, 141, 255, 0.6);
+}
