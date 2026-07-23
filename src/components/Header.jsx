@@ -12,7 +12,7 @@ const Header = () => {
         backgroundColor: '#d5652b',
         height: '140px',          // ← taller so text is not hidden
         width: '100%',
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'Figtree, sans-serif',
         fontSize: '50px',
         fontWeight: '600',
         color: '#008e',           // ← your text colour
