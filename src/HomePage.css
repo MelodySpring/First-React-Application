@@ -14,3 +14,16 @@
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(58, 141, 255, 0.6);
 }
+
+.homePageText {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.collage {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
