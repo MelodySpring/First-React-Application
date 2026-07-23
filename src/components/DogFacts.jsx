@@ -69,9 +69,9 @@ export default function DogFacts() {
                 {dogFacts.length === 0 ? (
                     <p>No dog facts yet.</p>
                 ) : (
-                    <ul>
+                    <ul className='dogList'>
                         {dogFacts.map((fact, index) => (
-                            <li key={index}>{fact}</li>
+                            <li key={index}>🐶 {fact}</li>
                         ))}
                     </ul>
                 )}

@@ -14,3 +14,13 @@
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(58, 141, 255, 0.6);
 }
+
+.dogList {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.dogList li {
+    margin-bottom: 8px;
+}
