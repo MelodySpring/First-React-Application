@@ -3,8 +3,11 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer style={styles.footer}>
-      <p>&copy; YOU NEED TO CHANGE THIS.</p>
+      <span>
+        &copy; {new Date().getFullYear()} Red Dog Design
+      </span>
     </footer>
+
   )
 }
 
