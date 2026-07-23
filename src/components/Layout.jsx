@@ -1,20 +1,16 @@
-import NavBar from './NavBar'
+// Layout.jsx
+import Header from './Header';
+import NavBar from './NavBar';
 import Footer from './Footer';
 
 const pages = [
   { name: 'Home', key: 'home' },
   { name: 'Random Red', key: 'randomred' },
   { name: 'Dog Facts', key: 'dogfacts' },
-]
-
+];
 
 const Layout = ({ children, selectedPage, onSetPage }) => {
-
-
-
   const renderPageLinks = () => {
-
-
     return pages.map(page => (
       <li
         key={page.key}
@@ -27,36 +23,30 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
         {page.name}
       </li>
     ));
-  }
-
+  };
 
   return (
     <div style={styles.container}>
-      {/* Navigation */}
-      <NavBar />
+      <Header />   {/* ← this makes the coloured bar appear */}
+
+      {/* Navigation (optional – remove if you don’t want a second bar) */}
+      {/* <NavBar /> */}
 
       <div style={styles.main}>
-        {/* Sidebar */}
         <aside style={styles.sidebar}>
-          <ul>
-            {renderPageLinks()}
-          </ul>
+          <ul>{renderPageLinks()}</ul>
         </aside>
 
-        {/* Content Area */}
         <section style={styles.content}>
           {children}
         </section>
       </div>
 
-      {/* Footer */}
       <Footer />
-
     </div>
   );
 };
 
-// Inline styles for simplicity
 const styles = {
   container: {
     display: 'flex',

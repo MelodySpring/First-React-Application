@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import logo from '../assets/reddog.svg';
 
 const Header = () => {
@@ -9,21 +9,25 @@ const Header = () => {
         alignItems: 'center',
         justifyContent: 'center',
         position: 'relative',
-        padding: '10px',
         backgroundColor: '#d5652b',
+        height: '140px',          // ← taller so text is not hidden
+        width: '100%',
         fontFamily: 'Roboto, sans-serif',
-        fontSize: '28px',
-        fontWeight: '600'
+        fontSize: '50px',
+        fontWeight: '600',
+        color: '#008e',           // ← your text colour
       }}
     >
       <img
         src={logo}
         alt="Red Dog Design Logo"
         style={{
-          width: "80px",
-          height: "auto",
-          position: "absolute",
-          left: "10px"
+          width: '150px',
+          height: 'auto',
+          position: 'absolute',
+          left: '20px',
+          top: '50%',
+          transform: 'translateY(-50%)',   // ← centers the logo vertically
         }}
       />
 
@@ -33,3 +37,4 @@ const Header = () => {
 };
 
 export default Header;
+
