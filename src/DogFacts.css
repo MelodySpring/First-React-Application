@@ -1,4 +1,5 @@
 .dogFactsTitle {
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     color: #3A8DFF;
     /* bright medium blue */
@@ -22,10 +23,12 @@
 }
 
 .dogList li {
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 8px;
 }
 
 .dogFactsText {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     gap: 20px;

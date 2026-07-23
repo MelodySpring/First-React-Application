@@ -10,11 +10,11 @@ const pages = [
 
 const Layout = ({ children, selectedPage, onSetPage }) => {
 
-  // TODO: what's stored in children, selectedPage, and onSetPage?
+
 
   const renderPageLinks = () => {
 
-    // TODO: What does this function do?
+
     return pages.map(page => (
       <li
         key={page.key}
@@ -65,7 +65,7 @@ const styles = {
     minWidth: '100vw',
   },
   selected: {
-    backgroundColor: '#999',
+    backgroundColor: '#c47949',
   },
   main: {
     display: 'flex',
@@ -73,23 +73,18 @@ const styles = {
   },
   sidebar: {
     width: '200px',
-    backgroundColor: '#f4f4f4',
+    backgroundColor: '#e29d6f',
     padding: '5px',
   },
   content: {
     flex: 1,
     padding: '20px',
   },
-  footer: {
-    backgroundColor: '#333',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '10px',
-  },
   sidebarLink: {
     display: 'block',
     padding: '5px',
-    color: '#333',
+    fontFamily: 'Roboto, sans-serif',
+    color: '#008e',
     textDecoration: 'none',
   },
 };
