@@ -12,17 +12,16 @@
     margin-top: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 8px;
     background: #d5652b;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    color: #008e;
-    border: 1px solid #008e;
+    color: #051191;
+    border: 1px solid #051191;
     border-radius: 10px;
 }
 
 .restartButton:hover {
-    background: #666;
+    background: #051191;
 }
 
 .GameWrapper {
@@ -40,11 +39,11 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    color: #008e;
+    color: #051191;
 }
 
 .GameContainer h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    color: #008e;
+    color: #051191;
 }

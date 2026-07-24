@@ -14,8 +14,8 @@ const Header = () => {
         width: '100%',
         fontFamily: 'Figtree, sans-serif',
         fontSize: '50px',
-        fontWeight: '600',
-        color: '#008e',           // ← your text colour
+        fontWeight: 'bold',
+        color: '#051191',           // ← your text colour
       }}
     >
       <img

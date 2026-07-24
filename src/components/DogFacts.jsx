@@ -40,16 +40,16 @@ export default function DogFacts() {
     };
 
     return (
-        <div style={{ padding: '20px' }}>
-            <h1>Dog Facts</h1>
-
-            <input
-                type="number"
-                value={maxLength}
-                onChange={handleChange}
-            />
-
-            <button onClick={handleSearch}>Fetch 🥎</button>
+        <div className="dogFactsContainer" style={{ padding: '20px' }}>
+            <h2>Dog Facts</h2>
+            <div className="dogControls">
+                <input
+                    type="number"
+                    value={maxLength}
+                    onChange={handleChange}
+                />
+                <button onClick={handleSearch}>Fetch 🥎</button>
+            </div>
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
 

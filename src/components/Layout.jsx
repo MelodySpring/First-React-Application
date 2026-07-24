@@ -76,7 +76,8 @@ const styles = {
     display: 'block',
     padding: '5px',
     fontFamily: 'Roboto, sans-serif',
-    color: '#008e',
+    color: '#051191',
+    fontWeight: 'bold',
     textDecoration: 'none',
   },
 };
