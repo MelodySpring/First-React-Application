@@ -41,10 +41,12 @@ export default function DogFacts() {
 
     return (
         <div className="dogFactsContainer" style={{ padding: '20px' }}>
-            <h2>Dog Facts</h2>
             <div className="dogControls">
+                <label className="dogLabel">How many facts do you want?</label>
                 <input
                     type="number"
+                    min="1"
+                    max="5"
                     value={maxLength}
                     onChange={handleChange}
                 />
@@ -54,18 +56,18 @@ export default function DogFacts() {
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
             {dogImage && (
-                <div style={{ marginTop: '20px' }}>
+                <div className='dogImageContainer' style={{ marginTop: '20px' }}>
                     <img
                         src={dogImage}
                         alt="Random Dog"
-                        style={{ width: '300px', borderRadius: '10px' }}
+                        style={{ width: '400px', borderRadius: '10px' }}
                     />
                 </div>
             )}
 
             <div>
                 {dogFacts.length === 0 ? (
-                    <p>No dog facts yet.</p>
+                    <p className='noFacts'>No dog facts yet.</p>
                 ) : (
                     <ul className='dogList'>
                         {dogFacts.map((fact, index) => (

@@ -77,6 +77,7 @@ const styles = {
     padding: '5px',
     fontFamily: 'Roboto, sans-serif',
     color: '#051191',
+    fontSize: '20px',
     fontWeight: 'bold',
     textDecoration: 'none',
   },
