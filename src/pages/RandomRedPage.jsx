@@ -13,7 +13,7 @@ const RandomRedPage = () => {
           I’ve been working on this pawsome block game, and guess what? Every square
           wants to be red—just like moi! I tried blue once, but it looked sad, like a
           cold puddle. Red is bold, warm, and screams “I’m fabulous!” So grab your
-          paws-uh, hands-and help me turn every block crimson. If you get the fastest
+          paws-uh, hands-and help me turn every block crimson and I will woof!. If you get the fastest
           time you win, I’ll give you a celebratory tail wag and maybe a slobbery kiss.
           If you lose… well, you’ll still get the slobbery kiss. Let’s make the world
           red together!

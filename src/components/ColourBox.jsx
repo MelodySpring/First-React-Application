@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import clickSound from "../assets/agogo-hit.wav";
+import clickSound from "../assets/woof.wav";
 
 
 function randomChoice(arr) {
