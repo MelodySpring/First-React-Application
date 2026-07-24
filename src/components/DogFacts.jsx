@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../DogFacts.css';
-
+import emoji from '../assets/emoji.png';
 
 export default function DogFacts() {
     const [maxLength, setMaxLength] = useState(5);
@@ -22,14 +22,12 @@ export default function DogFacts() {
         setError(null);
 
         try {
-            // Fetch facts
             const factsResponse = await axios.get(
                 `https://dogapi.dog/api/v2/facts?limit=${maxLength}`
             );
             const facts = factsResponse.data.data.map(item => item.attributes.body);
             setDogFacts(facts);
 
-            // Fetch random image
             const imageResponse = await axios.get(
                 "https://dog.ceo/api/breeds/image/random"
             );
@@ -44,6 +42,7 @@ export default function DogFacts() {
     return (
         <div style={{ padding: '20px' }}>
             <h1>Dog Facts</h1>
+
             <input
                 type="number"
                 value={maxLength}
@@ -54,7 +53,6 @@ export default function DogFacts() {
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
-            {/* Random dog image */}
             {dogImage && (
                 <div style={{ marginTop: '20px' }}>
                     <img
@@ -71,7 +69,14 @@ export default function DogFacts() {
                 ) : (
                     <ul className='dogList'>
                         {dogFacts.map((fact, index) => (
-                            <li key={index}>🐶 {fact}</li>
+                            <li key={index}>
+                                <img
+                                    src={emoji}
+                                    alt="dog emoji"
+                                    style={{ width: '20px', height: '20px', marginRight: '6px' }}
+                                />
+                                {fact}
+                            </li>
                         ))}
                     </ul>
                 )}
