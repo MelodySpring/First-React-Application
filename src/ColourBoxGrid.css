@@ -11,12 +11,14 @@
 .restartButton {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 1.2rem;
     cursor: pointer;
     border-radius: 8px;
-    background: #444;
-    color: white;
-    border: none;
+    background: #d5652b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #008e;
+    border: 1px solid #008e;
+    border-radius: 10px;
 }
 
 .restartButton:hover {
@@ -28,7 +30,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 1000px;
 }
 
 .GameContainer {
@@ -36,4 +38,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #008e;
+}
+
+.GameContainer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #008e;
 }

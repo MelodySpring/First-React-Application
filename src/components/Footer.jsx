@@ -10,11 +10,12 @@ const Footer = () => {
 
   )
 }
-
-// Inline styles for simplicity
 const styles = {
   footer: {
+    height: '80px',
     backgroundColor: '#d5652b',
+    fontSize: '40px',
+    fontFamily: 'Figtree, sans-serif',
     color: '#008e',
     textAlign: 'center',
     padding: '10px',

@@ -24,7 +24,6 @@ export default function RandomRed() {
 
     return (
         <div className="GameWrapper">
-            <h2>Red Boxes Found: {redCount}</h2>
             <ColourBoxGrid colours={colours} onRed={handleBoxRed} />
         </div>
     );

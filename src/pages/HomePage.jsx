@@ -16,7 +16,7 @@ const HomePage = () => {
         <p>She has almost finished this exciting Bootcamp with a pack called Step8Up, where she built all sorts of magical hooman projects. Javascript, Bootstrap, fancy layouts… honestly, I’m shocked she didn’t chew the keyboard just don't mention Python. And her tutor, Jason, is absolutely brilliant. Like, scary brilliant. Even though he likes cats. I mean… nobody’s perfect.</p>
       </div>
       <div>
-        <p>So if you need a website, my mum’s ready. I’ll supervise every project with professional tail wags and high‑quality howls.</p>
+        <p className='homePageText'>So if you need a website, my mum’s ready. I’ll supervise every project with professional tail wags and high‑quality howls.</p>
       </div>
     </div >
   );

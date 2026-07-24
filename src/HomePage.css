@@ -1,7 +1,6 @@
 .mainTitle {
-    font-size: 2rem;
+    font-size: 50px;
     color: #3A8DFF;
-    /* bright medium blue */
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
@@ -12,11 +11,14 @@
     margin: 0 auto;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(58, 141, 255, 0.6);
+    box-shadow: 0 0 15px #004a67;
+    background-color: white;
 }
 
 .homePageText {
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
+    color: #008e;
     display: flex;
     align-items: center;
     gap: 20px;

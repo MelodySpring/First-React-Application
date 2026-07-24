@@ -69,7 +69,9 @@ const styles = {
   content: {
     flex: 1,
     padding: '20px',
+    backgroundColor: '#f2d5bc',
   },
+
   sidebarLink: {
     display: 'block',
     padding: '5px',
