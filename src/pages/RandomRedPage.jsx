@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomRed from "../components/randomred";
+import RandomRed from "../components/RandomRed";
 import reddogblock from '../assets/reddogblock.png';
 import '../RandomRed.css';
 

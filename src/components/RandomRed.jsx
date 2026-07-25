@@ -1,4 +1,3 @@
-// src/components/RandomRed.jsx
 import { useState } from "react";
 import ColourBox from "./ColourBox";
 import ColourBoxGrid from "./ColourBoxGrid";
