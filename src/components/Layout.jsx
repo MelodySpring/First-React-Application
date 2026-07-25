@@ -68,7 +68,7 @@ const styles = {
   },
   content: {
     flex: 1,
-    padding: '0 20px 20px 20px',
+    padding: '0',
     backgroundColor: '#f2d5bc',
   },
 
