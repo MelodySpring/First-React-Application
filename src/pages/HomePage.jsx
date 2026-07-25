@@ -5,7 +5,7 @@ import '../HomePage.css'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='homeContainer'>
       <h1 className='mainTitle'>Red Dog Design</h1>
       <div className='homePageText'>
         <p>WOOF WOOF, gather round, hoomans - it’s Red the Malamute, your fluffy marketing manager with excellent fur and even better opinions. I’ve got breaking news straight from the doghouse. My mum - yes, the clever treat dispensing legend herself - has started building websites for people, and she even named her business Red Dog Design after <strong>ME</strong>. Finally, the recognition I deserve! </p>
