@@ -9,7 +9,7 @@
 .homeContainer {
     padding: 30px;
     margin: 0 auto 40px auto;
-    max-width: 1000px;
+    max-width: none;
 }
 
 .redCode {
