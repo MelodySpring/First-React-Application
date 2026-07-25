@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import ColourBox from "./ColourBox";
 import "../ColourBoxGrid.css";
 
-
 export default function ColourBoxGrid({ colours }) {
     const totalBoxes = 25;
 
@@ -12,7 +11,6 @@ export default function ColourBoxGrid({ colours }) {
     const [restartKey, setRestartKey] = useState(0);
     const [bestTime, setBestTime] = useState(null);
 
-    // Sets up the game timer
     useEffect(() => {
         if (!isRunning) return;
 
@@ -23,16 +21,14 @@ export default function ColourBoxGrid({ colours }) {
         return () => clearInterval(id);
     }, [isRunning]);
 
-    const handleBoxRed = () => {
+    const boxRed = () => {
         setRedCount(c => c + 1);
     };
 
-    // SEts the conditions for red to win
     useEffect(() => {
         if (redCount === totalBoxes) {
             setIsRunning(false);
 
-            // Updates the fastest time
             setBestTime(prev => {
                 if (prev === null) return time;
                 return time < prev ? time : prev;
@@ -40,7 +36,6 @@ export default function ColourBoxGrid({ colours }) {
         }
     }, [redCount]);
 
-    // Restarts the game
     const restartGame = () => {
         setRedCount(0);
         setTime(0);
@@ -48,14 +43,13 @@ export default function ColourBoxGrid({ colours }) {
         setRestartKey(k => k + 1);
     };
 
-    // Generate the boxes for the game grid
     const boxes = [];
     for (let i = 0; i < totalBoxes; i++) {
         boxes.push(
             <ColourBox
                 key={`${restartKey}-${i}`}
                 colours={colours}
-                onRed={handleBoxRed}
+                onRed={boxRed}
             />
         );
     }
@@ -80,4 +74,4 @@ export default function ColourBoxGrid({ colours }) {
             </div>
         </div>
     );
-}   
+}
