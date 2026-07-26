@@ -13,9 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  cursor: default;
-}
 
 a {
   font-weight: 500;
