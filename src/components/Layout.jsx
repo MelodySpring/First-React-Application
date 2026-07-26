@@ -27,17 +27,14 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
 
   return (
     <div style={styles.container}>
-      <Header />   {/* ← this makes the coloured bar appear */}
+      <Header />
 
-      {/* Navigation (optional – remove if you don’t want a second bar) */}
-      {/* <NavBar /> */}
-
-      <div style={styles.main}>
-        <aside style={styles.sidebar}>
+      <div className="layout-main" style={styles.main}>
+        <aside className="layout-sidebar" style={styles.sidebar}>
           <ul>{renderPageLinks()}</ul>
         </aside>
 
-        <section style={styles.content}>
+        <section className="layout-content" style={styles.content}>
           {children}
         </section>
       </div>
@@ -71,7 +68,6 @@ const styles = {
     padding: '0',
     backgroundColor: '#f2d5bc',
   },
-
   sidebarLink: {
     display: 'block',
     padding: '5px',
@@ -85,3 +81,4 @@ const styles = {
 };
 
 export default Layout;
+

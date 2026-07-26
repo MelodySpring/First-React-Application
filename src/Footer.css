@@ -1,0 +1,33 @@
+footer {
+    height: 80px;
+    background-color: #d5652b;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+    color: #051191;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer img {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: 60px;
+        font-size: 24px;
+        padding: 8px;
+        gap: 10px;
+    }
+
+    footer img {
+        width: 50px;
+        height: 50px;
+    }
+}

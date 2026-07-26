@@ -41,3 +41,39 @@
     box-shadow: 0 0 15px #004a67;
     background-color: white;
 }
+
+
+@media (max-width: 600px) {
+
+    .mainTitle {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .homeContainer {
+        padding: 20px;
+        margin: 0;
+        max-width: none;
+    }
+
+    .redCode {
+        width: 150px;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .homePageText {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .collage {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
