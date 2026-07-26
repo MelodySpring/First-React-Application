@@ -80,6 +80,7 @@ const styles = {
     fontSize: '20px',
     fontWeight: 'bold',
     textDecoration: 'none',
+    cursor: 'pointer',
   },
 };
 
